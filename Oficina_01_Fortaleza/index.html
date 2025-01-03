@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/brasao.jpg" type="img/jpg">
+    <title>Prefeitura Municipal de Fortaleza</title>
+
+</head>
+
+<body>
+    <div class="linha-topo"></div>
+    <header><img align="left" src="img/logo.jpg" alt="logo da prefeitura de fortaleza"></header><br>
+    <br><br><h1>A saúde começa com uma alimentação saudável!</h1>
+
+    <p>A alimentação saudável é baseada no consumo equilibrado de alimentos que fornecem os nutrientes necessários para o bom funcionamento do organismo. Isso inclui frutas, verduras, legumes, cereais integrais, proteínas magras, gorduras boas e a redução de alimentos ultraprocessados, ricos em açúcar, sal e gorduras trans. Além de promover energia e bem-estar, uma alimentação balanceada ajuda a prevenir doenças, fortalece o sistema imunológico e melhora a qualidade de vida. A hidratação adequada e a moderação no consumo também são pilares importantes.</p>
+    <br>
+
+    <section> <!--Benefícios de uma alimentação saudável em blocos-->
+    <h2 align="center">Benefícios de uma alimentação saudável</h2>
+
+                <div class="container">
+                    <div class="bloco">
+                        <img src="img/imunidade.jpg" alt="ícone de um desenho de um corpo masculino envolto por uma proteção tracejada e ao seu lado um escudo com o símbolo da saúde">
+                        <p>Melhora na imunidade</p>
+                    </div>    
+                    <div class="bloco">
+                        <img src="img/dormir.jpg" alt="ícone de um desenho de uma cama com um personagem dormindo mostrados pelos Zs encima do personagem">
+                        <p>Melhora na qualidade de sono</p>
+                    </div>
+                    <div class="bloco">
+                        <img src="img/ndoencas.jpg" alt="ícone de um desenho de um papel com o símbolo da saúde">
+                        <p>Diminui o risco de doenças crônicas</p>
+                    </div>
+                    <div class="bloco">
+                        <img src="img/intestino.jpg" alt="ícone de um desenho de um corpor atrás de uma maçã">
+                        <p>Melhoria da saúde intestinal</p>
+                    </div>
+                </div>
+        </section>
+        <br>
+        <section> <!--Explicação sobre o que é o IMC-->
+            <h2>O que é o IMC?</h2> 
+            <p>O Índice de Massa Corporal (IMC) é uma das principais ferramentas, adotada inclusive pela Organização Mundial de Saúde (OMS), para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, o IMC também aponta níveis de magreza e obesidade, que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos.</p> <img width="60" height="60" src="img/imc_icone.jpg" alt="ícone de um corpo em meio de uma balança e uma régua">
+        </section>
+        <br>
+       
+        <br><h2>Como Calcular o IMC</h2> <!--Explicação sobre como funciona a fórmula do IMC-->
+        <p>Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) elevada ao quadrado (altura x altura). De acordo com o indicador, o peso considerado saudável é aquele situado entre 18,5 e 24,9.</p>
+        <img align="middle"  width="350px"  src="img/calculo.jpg" alt="fórmula do imc">
+        <br>
+
+        <p>Os marcadores do IMC são:
+            <ol align="left">
+                Abaixo do Peso (IMC abaixo de 18,5);<br>
+                Peso Normal (IMC entre 18,5 e 24,9);<br>
+                Sobrepeso (IMC entre 25 e 29,9);<br>
+                Obesidade (IMC entre 30 e 34,9);<br>
+                Obesidade Grau II (IMC entre 35 e 39,9);<br>
+                Obesidade Grau III (IMC acima de 40) ou obesidade mórbida.
+            </ol>
+        </p>
+        
+        <section> <!--Cálculo de IMC pelo javascript-->
+        <h2>Calcule o seu IMC abaixo!</h2> <!--Parte que tem javascript-->
+        <fieldset>
+            <form id="formimc">
+                <label for="altura">Digite sua altura em metros: </label>
+                <input type="number" name="altura" id="altura" step="0.01" required placeholder="Ex: 1.70">
+                <br>
+                <label for="peso">Digite seu peso em kg: </label>
+                <input type="number" name="peso" id="peso" step="0.01" required placeholder="Ex: 60">
+                <br>
+                <button type="submit">Calcular IMC</button>
+            </form>
+        </fieldset>
+        <div id="resultado" class="resultado"></div><br>
+        <script src="imc.js"></script>
+    </section>
+        <section> <!--Tabela em HTML sobre o IMC-->
+            <h2>Um pouco mais sobre seu resultado</h2>
+                <table>
+                    <tr>
+                        <thead>
+                            <th>IMC</th>
+                            <th>Categoria</th>
+                            <th>Análise</th>
+                        </thead>
+                    </tr>
+                    <tr>
+                        <th>abaixo de 18.5</th>
+                        <th>Abaixo do Peso</th>
+                        <th>Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem. Outras podem estar enfrentando problemas, como a desnutrição. É preciso saber qual é o caso</th>
+                    </tr>
+                    <tr>
+                        <th>entre 18.5 e 24.9</th>
+                        <th>Peso Normal</th>
+                        <th>Que bom que você está com o peso normal! E o melhor jeito de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada.</th>
+                    </tr>
+                    <tr>
+                        <th>entre 25 e 29.9</th>
+                        <th>Sobrepeso</th>
+                        <th>Ele é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão. Importante rever hábitos e buscar ajuda antes de, por uma série de fatores, entrar na faixa da obesidade pra valer.</th>
+                    </tr>
+                    <tr>
+                        <th>entre 30 e 34.9</th>
+                        <th>Obesidade</th>
+                        <th>Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação. Você precisa iniciar um acompanhamento com nutricionista e/ou endocrinologista.</th>
+                    </tr>
+                    <tr>
+                        <th>entre 35 e 39.9</th>
+                        <th>Obesidade Grau II</th>
+                        <th>Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.</th>
+                    </tr>
+                    <tr>
+                        <th>acima de 40</th>
+                        <th>Obesidade Grau III</th>
+                        <th>Aqui o sinal é vermelho, com forte probabilidade de já existirem doenças muito graves associadas. O tratamento deve ser ainda mais urgente.</th>
+                    </tr>
+                </table>
+        </section>
+         
+        <footer> <!--Parte pra ficar parecido com o site oficial da Prefeitura de Fortaleza-->
+         <img src="img/logo_baixo.jpg" alt="logo da prefeitura de fortaleza em branco">
+         <div class="container">
+            <div>
+                <!-- Endereço retirado do site oficial da Prefeitura Municipal de Fortaleza-->
+                <section>
+                    <h4>ENDEREÇOS E CONTATOS</h4>
+                    <ol align="left">
+                        <address>
+                            Rua São José, 01 - Centro
+                            <br>
+                            Fortaleza - CE - CEP: 60.060-170
+                        </address><br>
+                        Fala Fortaleza: 0800.285.0880<br>
+                        Central 156
+                    </ol>
+                </section>
+            </div>
+            <div>
+                <!-- Links Importantes retirados do site oficial da Prefeitura Municipal de Fortaleza-->
+                <section class="ender">
+                    <h4>LINKS IMPORTANTES</h4>
+                    <a href="https://www.fortaleza.ce.gov.br/politica-de-privacidade">Política de Privacidade</a>
+                </section>
+            </div>
+        </div>
+        </footer>
+
+</body>
+</html>

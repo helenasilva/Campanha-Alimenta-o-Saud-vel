@@ -1,0 +1,66 @@
+.linha-topo {
+    width: 100%; /* Ocupa toda a largura da página */
+    height: 10px; /* Altura da linha */
+    background-color: #00a195; /* Cor da linha */
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+.bloco{
+    flex: 1; 
+    padding: 20px;
+    background-color: #00a195;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+}
+p{
+    font-size: medium;
+}
+
+body{
+    text-align: center;
+}
+h1{
+    color: #00a195;
+}
+h2{
+    color: #00a195;
+}
+
+fieldset{
+    text-align: left;
+    padding: 20px;
+}
+table{
+    margin: 20px;
+    border: 1px;
+}
+thead{
+    font-weight: bold;
+    border: 1px solid #00a195;
+}
+
+th{
+    background-color: #00a195;
+    color: aliceblue;
+    border: 1px solid #00a195;
+}
+tr{
+    color: bisque;
+}
+
+footer{ 
+        background-color: #00a195;
+        color: white;
+        text-align: left;
+        padding: 20px 0;
+        border-top: 4px solid #00a195; 
+    
+}
+
+.ender{
+        margin-left: 50px;
+}
